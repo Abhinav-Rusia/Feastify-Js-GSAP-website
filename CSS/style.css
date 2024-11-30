@@ -402,3 +402,12 @@ p {
   color: var(--text-white);
   padding: 0 0.5rem;
 }
+
+#downloadText, #downloadimg {
+  position: relative;
+  overflow: hidden;
+}
+
+.download-app{
+  overflow: hidden;
+}

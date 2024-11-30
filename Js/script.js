@@ -108,7 +108,7 @@ gsap.from("#aboutImg img", {
   rotation: 5,
   delay: 0.2,
   duration: 1.5,
-  ease: "power2.out",  // Simple ease-in effect
+  ease: "power2.out", // Simple ease-in effect
   scrollTrigger: {
     trigger: "#aboutImg img",
     start: "top 75%",
@@ -125,7 +125,7 @@ gsap.from("#aboutText h2", {
   scale: 0.95,
   duration: 1.2,
   delay: 0.2,
-  ease: "power2.out",  // Simple ease-in effect
+  ease: "power2.out", // Simple ease-in effect
   scrollTrigger: {
     trigger: "#aboutText",
     start: "top 75%",
@@ -142,7 +142,7 @@ gsap.from("#aboutText p", {
   scale: 0.95,
   duration: 1.2,
   delay: 0.2,
-  ease: "power2.out",  // Simple ease-in effect
+  ease: "power2.out", // Simple ease-in effect
   scrollTrigger: {
     trigger: "#aboutText",
     start: "top 70%",
@@ -159,7 +159,7 @@ gsap.from("#aboutText ul li", {
   scale: 0.95,
   duration: 1.2,
   delay: 0.2,
-  ease: "power2.out",  // Simple ease-in effect
+  ease: "power2.out", // Simple ease-in effect
   stagger: 0.3,
   scrollTrigger: {
     trigger: "#aboutText",
@@ -170,16 +170,104 @@ gsap.from("#aboutText ul li", {
   },
 });
 
-
 gsap.from("#storyText", {
   opacity: 0,
   scale: 0.1,
   duration: 1,
   scrollTrigger: {
     trigger: "#storyText",
-    start: "top 80%",       
-    end: "bottom top",     
-    scrub: false,           
-    markers: false,         
+    start: "top 80%",
+    end: "bottom top",
+    scrub: false,
+    markers: false,
+  },
+});
+
+gsap.from("#storyText2", {
+  opacity: 0,
+  scale: 0.1,
+  duration: 1,
+  scrollTrigger: {
+    trigger: "#storyText2",
+    start: "top 80%",
+    end: "bottom top",
+    scrub: false,
+    markers: false,
+  },
+});
+
+gsap.from(".foodCard", {
+  x: -500,
+  opacity: 0,
+  scale: 0.5,
+  duration: 1,
+  stagger: 0.4,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".foodCard",
+    start: "top 80%",
+    end: "bottom top",
+    scrub: false,
+    markers: false,
+  },
+});
+
+gsap.from(".cookCard", {
+  y: -500,
+  rotation: -45,
+  opacity: 0,
+  scale: 0.7,
+  duration: 1.5,
+  stagger: 0.5,
+  ease: "back.out(1.7)",
+  scrollTrigger: {
+    trigger: ".cookCard",
+    start: "bottom 50%",
+    end: "bottom top",
+    scrub: false,
+    markers: false,
+  },
+});
+
+gsap.from("#baked", {
+  opacity: 0,
+  scale: 0.1,
+  duration: 0.8,
+  scrollTrigger: {
+    trigger: "#baked",
+    start: "top 80%",
+    end: "bottom top",
+    scrub: false,
+    markers: false,
+  },
+});
+
+gsap.from("#downloadText", {
+  x: -500,
+  opacity: 0,
+  scale: 0.5,
+  duration: 1.5,
+  ease: "back.out(1.7)",
+  scrollTrigger: {
+    trigger: "#downloadText",
+    start: "top 80%",
+    end: "bottom top",
+    scrub: false,
+    markers: false,
+  },
+});
+
+gsap.from("#downloadImg", {
+  x: 500,
+  opacity: 0,
+  scale: 0.5,
+  duration: 1.5,
+  ease: "back.out(1.7)",
+  scrollTrigger: {
+    trigger: "#downloadImg",
+    start: "top 80%",
+    end: "bottom top",
+    scrub: false,
+    markers: false,
   },
 });
